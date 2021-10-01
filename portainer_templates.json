@@ -9,10 +9,15 @@
 			"platform": "linux",
 			"logo": "https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png",
 			"image": "itzg/minecraft-server:latest",
-			"env": [{
-				"name": "MYSQL_ROOT_PASSWORD",
-				"label": "Root password"
-			}],
+			"env": [
+				{
+					"name": "EULA"
+				},
+				{
+					"name": "MYSQL_ROOT_PASSWORD",
+					"label": "Root password"
+				}
+			],
 			"ports": [
 				"25565/tcp"
 			],
