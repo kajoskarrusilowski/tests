@@ -11,7 +11,9 @@
 			"image": "itzg/minecraft-server:latest",
 			"env": [
 				{
-					"name": "EULA"
+					"name": "EULA",
+					"label": "EULA",
+					"default": "true"
 				},
 				{
 					"name": "MYSQL_ROOT_PASSWORD",
