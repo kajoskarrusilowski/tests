@@ -9,6 +9,7 @@
 			"platform": "linux",
 			"logo": "https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png",
 			"image": "itzg/minecraft-server:latest",
+			"restart_policy": "unless-stopped",
 			"env": [
 				{
 					"name": "EULA",
@@ -62,9 +63,16 @@
 			"ports": [
 				"25565/tcp"
 			],
-			"volumes": [{
-				"serverData": "/data"
-			}]
+			"volumes": [
+				{
+					"container": "/data"
+				},
+				{
+					"container": "/usr/share/nginx/html",
+					"bind": "/var/www",
+					"readonly": true
+				}
+			]
 		},
 
 		{
