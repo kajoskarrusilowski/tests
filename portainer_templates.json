@@ -4,7 +4,7 @@
 		{
 			"type": 1,
 			"title": "[test] Minecraft",
-			"description": "Docker image registry",
+			"description": "Minecraft docker image, for more info and docs: https://github.com/itzg/docker-minecraft-server",
 			"categories": [ "games" ],
 			"platform": "linux",
 			"logo": "https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png",
@@ -13,11 +13,50 @@
 				{
 					"name": "EULA",
 					"label": "EULA",
+					 "description": "minecraft version",
+					 "default": "TRUE"
+				},
+				{
+					"name": "VERSION",
+					"label": "VERSION",
+					 "description": "minecraft version",
+					 "default": "1.17.1"
+				},
+				{
+					"name": "TYPE",
+					"label": "TYPE",
+					 "description": "Type of the server: SPIGOT, VANILLA, BUKKIT ecc.",
+					 "default": "SPIGOT"
+				},
+				{
+					"name": "MOTD",
+					"label": "MOTD",
+					"default": "Minecraft server"
+				},
+				{
+					"name": "ENABLE_RCON",
+					"label": "ENABLE_RCON",
 					"default": "true"
 				},
 				{
-					"name": "MYSQL_ROOT_PASSWORD",
-					"label": "Root password"
+					"name": "RCON_PASSWORD",
+					"label": "RCON_PASSWORD",
+					"default": "bhobho12345678"
+				},
+				{
+					"name": "RCON_PORT",
+					"label": "RCON_PORT",
+					 "default": "25575"
+				},
+				{
+					"name": "MEMORY",
+					"label": "MEMORY",
+					 "default": "2G"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Rom"
 				}
 			],
 			"ports": [
