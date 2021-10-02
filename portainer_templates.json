@@ -3,7 +3,7 @@
 	"templates": [
 		{
 			"type": 1,
-			"title": "[test] Minecraft",
+			"title": "Minecraft",
 			"description": "Minecraft docker image, for more info and docs: https://github.com/itzg/docker-minecraft-server",
 			"categories": [ "games" ],
 			"platform": "linux",
