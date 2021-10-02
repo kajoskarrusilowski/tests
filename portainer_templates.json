@@ -42,7 +42,7 @@
 				{
 					"name": "RCON_PASSWORD",
 					"label": "RCON_PASSWORD",
-					"default": "bhobho12345678"
+					"default": "rconPassword"
 				},
 				{
 					"name": "RCON_PORT",
@@ -52,17 +52,15 @@
 				{
 					"name": "MEMORY",
 					"label": "MEMORY",
-					 "default": "2G"
+					"default": "2G"
 				},
 				{
 					"name": "TZ",
 					"label": "TZ",
-					"default": "Europe/Rom"
+					"default": "Europe/Rome"
 				}
 			],
-			"ports": [
-				"25565/tcp"
-			],
+			"ports": [ "25565/tcp", "25575/tcp" ],
 			"volumes": [
 				{
 					"container": "/data"
